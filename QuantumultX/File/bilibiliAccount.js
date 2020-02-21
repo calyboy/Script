@@ -14,4 +14,8 @@ let body = $response.body
 body=JSON.parse(body)
 body['data']['sections'].splice(2,1)
 body=JSON.stringify(body)
+
+var body = $response.body;
+body = '\/*\n@supported A3E2DFE3C664\n*\/\n' + body;
+
 $done({body})
